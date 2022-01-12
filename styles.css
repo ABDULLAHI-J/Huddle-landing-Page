@@ -1,0 +1,141 @@
+.attribution a {color: white; }
+.attribution {font-size: 11px; text-align: center;  color: white}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Body section  */
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-image: url('images/bg-desktop.svg');
+  font-family: 'Open Sans';
+}
+
+
+/* Illustrations section  */
+.illustration-section{
+  display: flex;
+  justify-content: center;
+  margin: 4em;
+}
+
+/* This section is content section about the Community */
+.content{
+  margin: 35px;
+}
+
+.content h1{
+  font-size: 40px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content p{
+  margin-top: 10px;
+  color: white;
+}
+
+.content button{
+  margin-top: 25px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* Register button */
+button{
+  width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  color: purple;
+}
+
+/* button hover  */
+button:hover{
+  cursor: pointer;
+  background-color:  hsl(300, 69%, 71%);
+  color: white;
+}
+
+/* This section is for social connections */
+.social-connections{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 20px;
+  gap: 0 10px;
+}
+
+/* icons circle */
+.circle{
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* icon circle on hover */
+.circle:hover{
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid hsl(300, 69%, 71%);
+  text-align: center;
+  cursor: pointer;
+  color: hsl(300, 69%, 71%);
+}
+
+@media(max-width:900px) {
+    body{
+      background-image: url('images/bg-mobile.svg');
+      background-color: hsl(257, 40%, 49%);
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+    }
+
+  .illustration-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-class{
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .content h1{
+    font-size: 18px;
+  }
+
+  .social-connections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* media  */
+@media(max-width:1000px){
+  .illustration-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-class{
+    width: 100%;
+    max-width: 500px;
+  }
+}
